@@ -31,9 +31,6 @@ h3 {
   color: #ffffff;
 }
 
-section {
-  margin-bottom: 150px;
-}
 
 
 header {
@@ -101,7 +98,7 @@ header {
 
 .projects {
   width: 1150px;
-  margin: 0 auto;
+  margin: 0 auto 150px auto;
 }
 .projects h2 {
   margin-bottom: 40px;
@@ -156,7 +153,7 @@ header {
 
 .competencies {
   width: 1150px;
-  margin: 0 auto;
+  margin: 0 auto 150px auto;
 }
 .competencies h2 {
   margin-bottom: 48px;
@@ -187,7 +184,7 @@ header {
 
 .services {
   width: 1150px;
-  margin: 0 auto;
+  margin: 0 auto 150px auto;
 }
 .services h3 {
   width: 403px;
@@ -233,6 +230,8 @@ header {
 
 
 .contacts {
+  min-width: 1150px;
+  margin: 0 auto 150px auto;
   background: #191c19;
   border-radius: 30px;
   height: 717px;
@@ -299,75 +298,3 @@ footer {
   opacity: 0.5;
 }
 
-/*
-
-header {
-  height: 765px;
-  background-image: url(../resources/selfphoto.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  padding: 27px 123px;
-}
-
-
-H1 {
-  position: absolute;
-  width: 919px;
-  left: 119px;
-  top: 466px;
-  font-size: 80px;
-  line-height: 70px;
-  letter-spacing: -0.03em;
-  color: #1bff07;
-}
-
-.header__text {
-  position: absolute;
-  top: 334px;
-  left: 125px;
-  width: 430px;
-  font-size: 20px;
-  line-height: 26px;
-  color: #ffffff;
-}
-
-.nav__link {
-  margin-left: 50px;
-  font-size: 18px;
-  line-height: 23px;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.nav__link:hover {
-  color: #1bff07;
-}
-
-.nav {
-  float: right;
-}
-
-
-.logo-background {
-  position: relative;
-  width: 130px;
-  height: 39px;
-  background-color: #000000;
-  border-radius: 100px;  
-}
-
-.logo {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 9px;
-  margin: auto 0;
-}
-
-menu {
-  width: 1153px;
-  height: 55px;
-  display: inline-block;
-}
-*/
