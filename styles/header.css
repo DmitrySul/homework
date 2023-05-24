@@ -1,0 +1,88 @@
+.header {
+  background-image: url(../resources/selfphoto.png);
+  height: 765px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 36px;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  background: #000000;
+  border-radius: 100px;
+  padding: 5px 17px 6px 10px;
+  font-weight: 700;
+  font-size: 42.4138px;
+  line-height: 32px;
+  letter-spacing: -0.11em;
+  color: #1bff07;
+  text-decoration: none;
+}
+.menu__list {
+  display: flex;
+  gap: 50px;
+}
+.menu__link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  cursor: pointer;
+}
+.menu__link:hover {
+  color: #1bff07;
+  text-transform: uppercase;
+}
+.header__description {
+  position: absolute;
+  bottom: 328px;
+  width: 430px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  margin-bottom: 29px;
+}
+.header__title {
+  position: absolute;
+  bottom: 94px;
+  max-width: 919px;
+}
+
+@media (max-width: 1199px) {
+  .header {
+    background-image: url(../resources/selfphoto-tablet.png);
+    background-position: center;
+  }
+  .menu__list {
+    display: none;
+  }
+  .header__description {
+    max-width: 430px;
+    bottom: 294px;
+  }
+  .header__title {
+    max-width: 727px;
+    bottom: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    background-image: url(../resources/selfphoto-phone.png);
+  }
+  .header__description {
+    max-width: 310px;
+    font-size: 15px;
+    line-height: 20px;
+    bottom: 275px;
+  }
+  .header__title {
+    max-width: 353px;
+  }
+}

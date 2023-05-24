@@ -11,51 +11,105 @@
     />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-
-    <header>
-      <div class="nav-section">
-        <a href="https://dmitrysul.github.io/homework/" class="logo" src="./resources/background-logo.png">ORLOV</a>
-        <div class="nav">
-          <a class="nav__link" href="#look-all-projects">портфолио</a>
-          <a class="nav__link" href="#competencies">компетенции</a>
-          <a class="nav__link" href="#services">услуги</a>
-          <a class="nav__link" href="#contacts">контакты</a>
+    <header class="header">
+      <div class="container">
+        <div class="header__nav">
+          <a class="header__logo" href="/">ORLOV</a>
+          <nav class="header__menu">
+            <ul class="menu__list">
+              <li class="menu__link" href="#projects">портфолио</li>
+              <li class="menu__link" href="#competencies">компетенции</li>
+              <li class="menu__link" href="#services">услуги</li>
+              <li class="menu__link" href="#contacts">контакты</li>
+            </ul>
+          </nav>
         </div>
-      </div>
-      <div class="header_text">
-        <p>
+
+        <p class="header__description">
           Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
           повышают престиж компании и позволяют выделиться на фоне конкурентов
         </p>
-        <h1>Привет, я Саша — фронтенд разработчик и дизайнер сайтов</h1>
+
+        <h1 class="header__title">
+          Привет, я Саша — фронтенд разработчик и дизайнер сайтов
+        </h1>
       </div>
     </header>
 
     <main>
       <section class="projects">
-        <h2 id="look-all-projects">Самые свежие проекты</h2>
-        <div class="project__item">
-          <img src="./resources/realhome.png" alt="высокое здание" />
-          <h3>Realhome</h3>
-          <p>дизайн,верстка, настройка</p>
+        <div class="container">
+          <h2 class="projects__title" id="projects">Самые свежие проекты</h2>
+          <ul class="projects__list">
+            <li class="project">
+              <picture>
+                <source
+                  media="max-width: 767px"
+                  src="./resources/metrika-phone.jpg"
+                />
+                <source
+                  media="max-width: 1199px"
+                  src="./resources/metrika-tablet.jpg"
+                />
+                <img
+                  class="project__image"
+                  src="./resources/metrika-pc.jpg"
+                  alt="макет сайта Метрика"
+                />
+              </picture>
+              <a class="project__label">дизайн интерьера</a>
+              <h3 class="project__title">Метрика</h3>
+              <p class="project__description">верстка, настройка</p>
+            </li>
+            <li class="project">
+              <picture>
+                <source
+                  media="max-width: 767px"
+                  src="./resources/nothing-phone.jpg"
+                />
+                <source
+                  media="max-width: 1199px"
+                  src="./resources/nothing-tablet.jpg"
+                />
+                <img
+                  class="project__image"
+                  src="./resources/nothing-pc.jpg"
+                  alt="макет сайта Nothing"
+                />
+              </picture>
+              <a class="project__label">презентация продукта</a>
+              <h3 class="project__title">Nothing</h3>
+              <p class="project__description">верстка, настройка</p>
+            </li>
+            <li class="project">
+              <picture>
+                <source
+                  media="max-width: 767px"
+                  src="./resources/toptrip-phone.jpg"
+                />
+                <source
+                  media="max-width: 1199px"
+                  src="./resources/toptrip-tablet.jpg"
+                />
+                <img
+                  class="project__image"
+                  src="./resources/toptrip-pc.jpg"
+                  alt="макет сайта Toptrip"
+                />
+              </picture>
+              <a class="project__label">заказ путешествий</a>
+              <h3 class="project__title">TOPTRIP</h3>
+              <p class="project__description">верстка</p>
+            </li>
+          </ul>
+          <button class="projects__btn">Смотреть все проекты</button>
         </div>
-        <div class="project__item">
-          <img src="./resources/glass.png" alt="визитки" />
-          <h3>GLASS</h3>
-          <p>разработка интерфейса</p>
-        </div>
-        <div class="project__item">
-          <img src="./resources/fesiyen.png" alt="дизайны сайтов" />
-          <h3>Fesiyen</h3>
-          <p>разработка интерфейса</p>
-        </div>
-        <a class="look-all-projects" href="#look-all-projects"
-          >Смотреть все проекты</a
-        >
       </section>
-
+    </main>
+    <!--
       <section class="competencies">
         <h2 id="competencies">Мои компетенции</h2>
         <div class="competencies__item">
@@ -156,14 +210,13 @@
           </ul>
         </div>
       </section>
-    </main>
+    
 
     <footer>
       <div class="footer_inner">
         <p class="footer__text">Портфолио фронтенд-разработчика Саши Орлова</p>
         <p class="footer__copyright">Все права защищены. 2023</p>
       </div>
-    </footer>
-
+    </footer>-->
   </body>
 </html>
