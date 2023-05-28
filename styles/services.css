@@ -1,39 +1,84 @@
 .services__title {
-    width: 403px;
+  width: 403px;
 }
 .services__list {
-    margin-top: 80px;
-    border: 1px solid red;
+  margin-top: 80px;
 }
 .service__item {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .service__item:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 .service__image {
-    border-radius: 30px;
-    width: 100%;
+  border-radius: 30px;
+  width: 100%;
 }
-.service__item-info{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #191c19;
-    border-radius: 30px;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 45px;
-    padding-bottom: 64px;
+.service__item-info {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #191c19;
+  border-radius: 30px;
+  padding: 40px 45px 64px 40px;
 }
 .service__item-info__title {
-    font-size: 55px;
-    line-height: 61px;
-    color: #1BFF07;
-    width: 50%;
+  font-size: 55px;
+  line-height: 61px;
+  color: #1bff07;
+  width: 50%;
 }
 .service__item-info__description {
-    font-size: 22px;
-    line-height: 29px;
-    color: #FFFFFF;
-    width: 50%;
+  font-size: 22px;
+  line-height: 29px;
+  color: #ffffff;
+  width: 50%;
+}
+
+@media (max-width: 1199px) {
+  .services__title {
+    width: 326px;
+  }
+  .services__list {
+    margin-top: 60px;
+  }
+  .service__item {
+    margin-bottom: 32px;
+  }
+  .service__image {
+    border-radius: 24px;
+  }
+  .service__item-info {
+    border-radius: 24px;
+    padding: 32px 51px 55px 32px;
+  }
+  .service__item-info__title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .service__item-info__description {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services__title {
+    width: 100%;
+  }
+  .service__item {
+    margin-bottom: 60px;
+  }
+  .service__item-info {
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px 23px 67px 21px;
+  }
+  .service__item-info__title {
+    font-size: 35px;
+    line-height: 39px;
+    width: 100%;
+  }
+  .service__item-info__description {
+    width: 100%;
+  }
 }
