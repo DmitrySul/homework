@@ -26,10 +26,8 @@
   gap: 50px;
 }
 .menu__link {
-  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  letter-spacing: -0.03em;
   color: #ffffff;
   cursor: pointer;
 }
@@ -41,10 +39,8 @@
   position: absolute;
   bottom: 328px;
   width: 430px;
-  font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  letter-spacing: -0.03em;
   color: #ffffff;
   margin-bottom: 29px;
 }

@@ -1,5 +1,7 @@
 @import "../styles/header.css";
 @import "../styles/projects.css";
+@import "../styles/experience.css";
+@import "../styles/services.css";
 
 html {
   scroll-behavior: smooth;
@@ -31,7 +33,11 @@ h3 {
 }
 h1,
 h2,
-h3 {
+h3,
+button,
+p, 
+a {
+  font-family: inherit;
   letter-spacing: -0.03em;
   font-weight: 400;
 }
