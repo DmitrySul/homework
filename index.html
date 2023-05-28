@@ -18,6 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
+    
     <header class="header">
       <div class="container">
         <div class="header__nav">
@@ -42,6 +43,7 @@
     </header>
 
     <main>
+      
       <section class="projects">
         <div class="container">
           <h2 class="projects__title" id="projects">Самые свежие проекты</h2>
@@ -279,8 +281,9 @@
               </form>
               <button class="feedback__btn">Отправить</button>
             </div>
-            <div class="feedback__image">
+            <div class="image__box">
               <img
+                class="feedback__image"
                 src="./resources/programmer.png"
                 alt="тип с огромными пальцами бельше, чем клавиатура. Как он печатать будет?"
               />
@@ -288,17 +291,31 @@
           </div>
         </div>
       </section>
-
-      <section class="footer"></section>
     </main>
 
-    <!--
+    <footer class="footer">
 
-    <footer>
-      <div class="footer_inner">
-        <p class="footer__text">Портфолио фронтенд-разработчика Саши Орлова</p>
-        <p class="footer__copyright">Все права защищены. 2023</p>
+      <div class="container">
+
+        <div class="footer__title">
+          <p class="footer__description">
+            Портфолио фротнтенд-разработчика Саши Орлова
+          </p>
+          <ul class="footer__contacts">
+            <li class="footer__contacts-link">
+              <a href="/index.html">mail</a>
+            </li>
+            <li class="footer__contacts-link"><a href="">telegram</a></li>
+            <li class="footer__contacts-link"><a href="">instagram</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__copyright">
+          <p class="footer__rights">Все права защищены. 2023</p>
+          <p class="footer__policy">политика обработки данных</p>
+        </div>
       </div>
-    </footer>-->
+    </footer>
+
   </body>
 </html>
