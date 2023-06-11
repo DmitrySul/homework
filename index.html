@@ -18,18 +18,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    
     <header class="header">
       <div class="container">
         <div class="header__nav">
           <a class="header__logo" href="/">ORLOV</a>
           <nav class="header__menu">
             <ul class="menu__list">
-              <li class="menu__link" href="#projects">портфолио</li>
-              <li class="menu__link" href="#competencies">компетенции</li>
-              <li class="menu__link" href="#services">услуги</li>
-              <li class="menu__link" href="#contacts">контакты</li>
+              <li>
+                <a class="menu__link" href="#projects">портфолио</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#competencies">компетенции</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#services">услуги</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#contacts">контакты</a>
+              </li>
             </ul>
+            <div class="js-burger-btn burger-btn"></div>
           </nav>
         </div>
         <p class="header__description">
@@ -40,11 +48,50 @@
           Привет, я Саша — фронтенд разработчик и дизайнер сайтов
         </h1>
       </div>
+
+      <div class="js-burger burger">
+        <div class="burger__content">
+          <div class="burger__logo">
+            <a class="burger__logo-title">ORLOV</a>
+          </div>
+          <nav class="burger__menu">
+            <ul class="burger-menu__list">
+              <li>
+                <a class="burger-menu__list-item" href="#projects">ПОРТФОЛИО</a>
+              </li>
+              <li>
+                <a class="burger-menu__list-item" href="#competencies"
+                  >КОМПЕТЕНЦИИ</a
+                >
+              </li>
+              <li>
+                <a class="burger-menu__list-item" href="#services">УСЛУГИ</a>
+              </li>
+              <li>
+                <a class="burger-menu__list-item" href="#contacts">КОНТАКТЫ</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="burger__contacts js-burger__content">
+            <p class="burger__contacts-title">для связи:</p>
+            <a
+              href="https://t.me/ezhik_ds"
+              class="burger__contacts-telegram"
+              target="_blank"
+              >telegram</a
+            >
+            <a href="mailto:9594669@gmail.com" class="burger__contacts-mail"
+              >mail</a
+            >
+            <a href="https://www.instagram.com/" class="burger__contacts-instagram">instagram</a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
-      
-      <section class="projects">
+      <section id="projects" class="projects">
         <div class="container">
           <h2 class="projects__title" id="projects">Самые свежие проекты</h2>
           <ul class="projects__list">
@@ -52,7 +99,7 @@
               <picture>
                 <source
                   media="(max-width: 500px)"
-                  srcset="./resources/metrika-phone.png"
+                  srcset="/resources/metrika-phone.png"
                 />
                 <source
                   media="(max-width: 1199px)"
@@ -185,7 +232,7 @@
         </div>
       </section>
 
-      <section class="services">
+      <section id="services" class="services">
         <div class="container">
           <h3 class="services__title">
             Помогаю реализовать широкий спектр задач
@@ -264,7 +311,7 @@
         </div>
       </section>
 
-      <section class="feedback">
+      <section id="contacts" class="feedback">
         <div class="container">
           <div class="feedback__inner">
             <div class="feedback__info">
@@ -294,9 +341,7 @@
     </main>
 
     <footer class="footer">
-
       <div class="container">
-
         <div class="footer__title">
           <p class="footer__description">
             Портфолио фротнтенд-разработчика Саши Орлова
@@ -317,5 +362,6 @@
       </div>
     </footer>
 
+    <script src="./burger.js"></script>
   </body>
 </html>

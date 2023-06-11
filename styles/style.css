@@ -4,6 +4,7 @@
 @import "../styles/services.css";
 @import "../styles/feedback.css";
 @import "../styles/footer.css";
+@import "../styles/burger.css";
 
 html {
   scroll-behavior: smooth;

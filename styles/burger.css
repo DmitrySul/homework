@@ -1,0 +1,121 @@
+.body_fixed {
+  overflow: hidden;
+}
+
+.burger-btn {
+  display: none;
+}
+
+.burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 100;
+  justify-content: end;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+}
+
+.burger_open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.burger__logo-title {
+  padding: 0 15px 0 10px;
+  background: #000000;
+  border: 1px solid #1bff07;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 42.4138px;
+  line-height: 55px;
+  letter-spacing: -0.11em;
+  color: #1bff07;
+  text-decoration: none;
+}
+
+.burger__content {
+  width: 362px;
+  max-height: 100%;
+  overflow-y: auto;
+  background-color: #000000;
+  padding: 73px 0px 0 28px;
+}
+
+.burger-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  margin-top: 44px;
+  margin-left: 9px;
+}
+
+.burger-menu__list-item {
+  display: block;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.burger__contacts {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  gap: 20px;
+  color: #ffffff;
+}
+
+.burger__contacts-title {
+  font-size: 16px;
+  line-height: 21px;
+  opacity: 0.5;
+}
+
+.burger__contacts a {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+@media (max-width: 1199px) {
+  .burger-btn {
+    display: block;
+    width: 36px;
+    height: 27px;
+    background-image: url(../resources/burger-menu.png);
+  }
+
+  .burger-btn_open {
+    width: 22px;
+    height: 22px;
+    background-image: url(../resources/burger-close.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100000;
+  }
+  .burger-btn_open::after {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .burger-btn {
+    width: 38px;
+  }
+  .burger-btn::after {
+    margin-top: 5px;
+    margin-left: 14px;
+    width: 24px;
+  }
+  .burger-btn_open {
+    width: 21px;
+  }
+}
