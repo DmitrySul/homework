@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Портфолио</title>
+    <link rel="icon" href="./resources/shotcut-icon.jpg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./resources/shotcut-icon.jpg"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -84,7 +90,11 @@
             <a href="mailto:9594669@gmail.com" class="burger__contacts-mail"
               >mail</a
             >
-            <a href="https://www.instagram.com/" class="burger__contacts-instagram">instagram</a>
+            <a
+              href="https://www.instagram.com/"
+              class="burger__contacts-instagram"
+              >instagram</a
+            >
           </div>
         </div>
       </div>
@@ -95,7 +105,7 @@
         <div class="container">
           <h2 class="projects__title" id="projects">Самые свежие проекты</h2>
           <ul class="projects__list">
-            <li class="project__list-item">
+            <li class="project__item">
               <picture>
                 <source
                   media="(max-width: 500px)"
@@ -111,11 +121,13 @@
                   alt="макет сайта Метрика"
                 />
               </picture>
-              <a class="project__label">дизайн интерьера</a>
-              <h3 class="project__title">Метрика</h3>
+              <p class="project__label">дизайн интерьера</p>
+              <h3 class="project__title">
+                <a href="https://dmitrysul.github.io/Metrica-Adaptive-Draft/" class="project__title-link" target="_blank">Метрика</a>
+              </h3>
               <p class="project__description">верстка, настройка</p>
             </li>
-            <li class="project__list-item">
+            <li class="project__item">
               <picture>
                 <source
                   media="(max-width: 500px)"
@@ -131,11 +143,13 @@
                   alt="макет сайта Nothing"
                 />
               </picture>
-              <a class="project__label">презентация продукта</a>
-              <h3 class="project__title">Nothing</h3>
+              <p class="project__label">презентация продукта</p>
+              <h3 class="project__title">
+                <a href="" class="project__title-link">Nothing</a>
+              </h3>
               <p class="project__description">верстка, настройка</p>
             </li>
-            <li class="project__list-item">
+            <li class="project__item">
               <picture>
                 <source
                   media="(max-width: 500px)"
@@ -151,8 +165,10 @@
                   alt="макет сайта Toptrip"
                 />
               </picture>
-              <a class="project__label">заказ путешествий</a>
-              <h3 class="project__title">TOPTRIP</h3>
+              <p class="project__label">заказ путешествий</p>
+              <h3 class="project__title">
+                <a href="" class="project__title-link">TOPTRIP</a>
+              </h3>
               <p class="project__description">верстка</p>
             </li>
           </ul>
@@ -311,14 +327,14 @@
         </div>
       </section>
 
-      <section id="contacts" class="feedback">
+      <section id="contacts" class="contacts">
         <div class="container">
-          <div class="feedback__inner">
-            <div class="feedback__info">
-              <h4 class="feedback__title">
+          <div class="contacts__inner">
+            <div class="contacts__info">
+              <h4 class="contacts__title">
                 Для связи со мной заполните простую форму
               </h4>
-              <form class="feedback__form">
+              <form class="contacts__form">
                 <input class="input" name="name" placeholder="Имя Фамилия" />
                 <input
                   class="input"
@@ -326,11 +342,11 @@
                   placeholder="example@mail.com"
                 />
               </form>
-              <button class="feedback__btn">Отправить</button>
+              <button class="contacts__btn">Отправить</button>
             </div>
-            <div class="image__box">
+            <div class="contacts__image-wrapper">
               <img
-                class="feedback__image"
+                class="contacts__image"
                 src="./resources/programmer.png"
                 alt="тип с огромными пальцами бельше, чем клавиатура. Как он печатать будет?"
               />
@@ -342,16 +358,20 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__title">
-          <p class="footer__description">
+        <div class="footer__contacts">
+          <p class="footer__title">
             Портфолио фротнтенд-разработчика Саши Орлова
           </p>
-          <ul class="footer__contacts">
-            <li class="footer__contacts-link">
+          <ul class="footer__link">
+            <li class="link__title">
               <a href="mailto:9594669@gmail.com">mail</a>
             </li>
-            <li class="footer__contacts-link"><a href="https://t.me/ezhik_ds" target="_blank">telegram</a></li>
-            <li class="footer__contacts-link"><a target="_blank" href="https://www.instagram.com/">instagram</a></li>
+            <li class="link__title">
+              <a href="https://t.me/ezhik_ds" target="_blank">telegram</a>
+            </li>
+            <li class="link__title">
+              <a target="_blank" href="https://www.instagram.com/">instagram</a>
+            </li>
           </ul>
         </div>
 

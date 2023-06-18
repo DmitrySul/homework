@@ -2,11 +2,15 @@
   margin-bottom: 40px;
 }
 
+.project__title-link {
+  color: #FFFFFF;
+}
+
 .projects__list {
   margin-bottom: 80px;
 }
 
-.project__list-item {
+.project__item {
   position: relative;
 }
 

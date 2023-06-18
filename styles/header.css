@@ -31,10 +31,7 @@
   color: #ffffff;
   cursor: pointer;
 }
-.menu__link:hover {
-  color: #1bff07;
-  text-transform: uppercase;
-}
+
 .header__description {
   position: absolute;
   bottom: 328px;
