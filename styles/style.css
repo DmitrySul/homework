@@ -34,15 +34,9 @@ h3 {
   line-height: 46px;
   color: #ffffff;
 }
-h4 {
-  font-size: 60px;
-  line-height: 60px;
-  color: #ffffff;
-}
 h1,
 h2,
 h3,
-h4,
 button,
 p,
 a,
@@ -83,10 +77,6 @@ a:hover {
     font-size: 28px;
     line-height: 36px;
   }
-  h4 {
-    font-size: 40px;
-    line-height: 40px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -105,9 +95,5 @@ a:hover {
   h3 {
     font-size: 28px;
     line-height: 36px;
-  }
-  h4 {
-    font-size: 35px;
-    line-height: 37px;
   }
 }
